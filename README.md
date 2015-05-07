@@ -8,6 +8,19 @@ add ellipses when needed.
 
 [Demo](http://sparkalow.github.io/angular-truncate/)
 
+## Install
+
+You can install this package with `bower`.
+
+### bower
+
+```shell
+bower install angular-truncate-2
+```
+
+The files are then available at `bower_components/angular-truncate-2/src/truncate.js`
+
+
 ## How to use angular truncate
 
 
