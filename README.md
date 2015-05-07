@@ -10,7 +10,7 @@ add ellipses when needed.
 
 ## Install
 
-You can install this package with `bower` and `npm`.
+You can install this package with `bower`, `npm` and `gem`.
 
 ### bower
 
@@ -28,6 +28,18 @@ npm install angular-truncate-2
 
 The files are then available at `node_modules/angular-truncate-2/src/truncate.js`
 
+
+### gem
+
+Converted using [rails-asset](https://rails-assets.org/).
+
+```shell
+gem 'rails-assets-angular-truncate-2'
+```
+Include following in application.js:
+```js
+//= require angular-truncate-2
+```
 
 ## How to use angular truncate
 
