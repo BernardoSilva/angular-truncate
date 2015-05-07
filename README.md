@@ -10,7 +10,7 @@ add ellipses when needed.
 
 ## Install
 
-You can install this package with `bower`.
+You can install this package with `bower` and `npm`.
 
 ### bower
 
@@ -19,6 +19,14 @@ bower install angular-truncate-2
 ```
 
 The files are then available at `bower_components/angular-truncate-2/src/truncate.js`
+
+### npm
+
+```shell
+npm install angular-truncate-2
+```
+
+The files are then available at `node_modules/angular-truncate-2/src/truncate.js`
 
 
 ## How to use angular truncate
