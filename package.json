@@ -24,7 +24,9 @@
     "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "*",
-    "karma": "~ 0.8.0"
+    "karma": "~0.10",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "~0.1.5"
   },
   "scripts": {
     "test": "karma start test/karma.conf.js --single-run --browsers Chrome",
