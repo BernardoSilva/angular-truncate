@@ -3,71 +3,93 @@
 // For all available config options and default values, see:
 // https://github.com/vojtajina/testacular/blob/stable/lib/config.js#L54
 
-// base path, that will be used to resolve files and exclude
-basePath = './..';
+var configuration = {
+    // other things
+ 
+    
 
-// frameworks to use
-// frameworks = ['jasmine'];
 
-// list of files / patterns to load in the browser
-files = [
-  JASMINE,
-  JASMINE_ADAPTER,
-  'test/lib/angular/angular.min.js',
-  'test/lib/angular/angular-mocks.js',
-  'src/*.js',
-  'test/unit/*.js'
-];
+	// base path, that will be used to resolve files and exclude
+	basePath: './..',
 
-// list of files to exclude
-exclude = [];
+	// frameworks to use
+	frameworks: ['jasmine'],
 
-// use dots reporter, as travis terminal does not support escaping sequences
-// possible values: 'dots', 'progress', 'junit'
-// CLI --reporters progress
-// 'coverage',
-reporters = ['progress'];
+	// list of files / patterns to load in the browser
+	files: [
+	  'test/lib/angular/angular.min.js',
+	  'test/lib/angular/angular-mocks.js',
+	  'src/*.js',
+	  'test/unit/*.js'
+	],
 
-// web server port
-// CLI --port 9876
-port = 9876;
+	// list of files to exclude
+	exclude: [],
 
-// cli runner port
-// CLI --runner-port 9100
-runnerPort = 9100;
+	// use dots reporter, as travis terminal does not support escaping sequences
+	// possible values: 'dots', 'progress', 'junit'
+	// CLI --reporters progress
+	// 'coverage',
+	reporters: ['progress'],
 
-// enable / disable colors in the output (reporters and logs)
-// CLI --colors --no-colors
-colors = true;
+	// web server port
+	// CLI --port 9876
+	port: 9876,
 
-// level of logging
-// possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-// CLI --log-level debug
-logLevel = LOG_INFO;
+	// cli runner port
+	// CLI --runner-port 9100
+	runnerPort: 9100,
 
-// enable / disable watching file and executing tests whenever any file changes
-// CLI --auto-watch --no-auto-watch
-autoWatch = true;
+	// enable / disable colors in the output (reporters and logs)
+	// CLI --colors --no-colors
+	colors: true,
 
-// Start these browsers, currently available:
-// - Chrome
-// - ChromeCanary
-// - Firefox
-// - Opera
-// - Safari (only Mac)
-// - PhantomJS
-// - IE (only Windows)
-// CLI --browsers Chrome,Firefox,Safari
-browsers = ['Chrome'];
+	// level of logging
+	// possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
+	// CLI --log-level debug
+	//logLevel: LOG_INFO,
 
-// If browser does not capture in given timeout [ms], kill it
-// CLI --capture-timeout 5000
-captureTimeout = 5000;
+	// enable / disable watching file and executing tests whenever any file changes
+	// CLI --auto-watch --no-auto-watch
+	autoWatch: true,
 
-// Auto run tests on start (when browsers are captured) and exit
-// CLI --single-run --no-single-run
-singleRun = false;
+	// Start these browsers, currently available:
+	// - Chrome
+	// - ChromeCanary
+	// - Firefox
+	// - Opera
+	// - Safari (only Mac)
+	// - PhantomJS
+	// - IE (only Windows)
+	// CLI --browsers Chrome,Firefox,Safari
+	browsers: ['Chrome'],
 
-// report which specs are slower than 500ms
-// CLI --report-slower-than 500
-reportSlowerThan = 500;
+	// If browser does not capture in given timeout [ms], kill it
+	// CLI --capture-timeout 5000
+	captureTimeout: 5000,
+
+	// Auto run tests on start (when browsers are captured) and exit
+	// CLI --single-run --no-single-run
+	singleRun: false,
+
+	// report which specs are slower than 500ms
+	// CLI --report-slower-than 500
+	reportSlowerThan: 500,
+
+	customLaunchers: {
+        ChromeNoSandbox: {
+        	base: 'Chrome',
+        	flags: ['--no-sandbox'] 
+    	}
+    },
+
+};
+ 
+if (process.env.TRAVIS) {
+    configuration.browsers = ['ChromeNoSandbox'];
+}
+ 
+module.exports = function (config) {
+
+config.set(configuration);
+};

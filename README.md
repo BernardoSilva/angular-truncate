@@ -1,5 +1,8 @@
+[![Build Status](https://travis-ci.org/BernardoSilva/angular-truncate.svg?branch=master)](https://travis-ci.org/BernardoSilva/angular-truncate)
+
 Angular Truncate
----------
+----------------
+
 This project is a filter for Angularjs to truncate text strings to a set number of characters or words and
 add ellipses when needed.
 
