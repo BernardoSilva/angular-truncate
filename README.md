@@ -6,7 +6,7 @@ Angular Truncate
 This project is a filter for Angularjs to truncate text strings to a set number of characters or words and
 add ellipses when needed.
 
-[Demo](http://sparkalow.github.io/angular-truncate/)
+[Demo](http://bernardosilva.github.io/angular-truncate/)
 
 ## Install
 
