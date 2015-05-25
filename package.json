@@ -31,7 +31,7 @@
     "karma-jasmine": "~0.1.5"
   },
   "scripts": {
-    "test": "karma start karma.conf.js --single-run --browsers Chrome",
+    "test": "karma start karma.conf.js --single-run",
     "coveralls": "node_modules/.bin/coveralls < build/reports/coverage/report-lcov/lcov.info"
   }
 }
