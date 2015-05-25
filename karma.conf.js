@@ -10,27 +10,48 @@ var configuration = {
 
 
 	// base path, that will be used to resolve files and exclude
-	basePath: './..',
+	// basePath: './..',
 
 	// frameworks to use
 	frameworks: ['jasmine'],
 
 	// list of files / patterns to load in the browser
 	files: [
-	  'test/lib/angular/angular.min.js',
-	  'test/lib/angular/angular-mocks.js',
+	   'test/lib/angular/angular.min.js',
+	   'test/lib/angular/angular-mocks.js',
 	  'src/*.js',
-	  'test/unit/*.js'
+	  'test/*.js'
 	],
 
 	// list of files to exclude
 	exclude: [],
 
+	preprocessors: {
+      'src/*.js': ['coverage']
+    },
+
 	// use dots reporter, as travis terminal does not support escaping sequences
 	// possible values: 'dots', 'progress', 'junit'
 	// CLI --reporters progress
 	// 'coverage',
-	reporters: ['progress'],
+	reporters: ['progress', 'coverage', 'dots'],
+
+	coverageReporter: {
+      // specify a common output directory
+      dir: 'build/reports/coverage',
+      reporters: [
+        // reporters not supporting the `file` property
+        { type: 'html', subdir: 'report-html' },
+        { type: 'lcov', subdir: 'report-lcov' },
+        // reporters supporting the `file` property, use `subdir` to directly
+        // output them in the `dir` directory
+        { type: 'cobertura', subdir: '.', file: 'cobertura.txt' },
+        { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
+        { type: 'teamcity', subdir: '.', file: 'teamcity.txt' },
+        { type: 'text', subdir: '.', file: 'text.txt' },
+        { type: 'text-summary', subdir: '.', file: 'text-summary.txt' },
+      ]
+    },
 
 	// web server port
 	// CLI --port 9876

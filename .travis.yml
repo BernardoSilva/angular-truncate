@@ -3,8 +3,6 @@ node_js:
   - "0.11"
   - "0.10"
 
-script: node_modules/karma/bin/karma start test/karma.conf.js --single-run
-
 # Google Chrome
 #
 # https://github.com/travis-ci/travis-ci/issues/272#issuecomment-14402117
@@ -14,3 +12,9 @@ before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+
+# Run tests.
+script: npm run-script test
+
+# Send reports.
+after_script: npm run-script coveralls

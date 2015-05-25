@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/BernardoSilva/angular-truncate.svg?branch=master)](https://travis-ci.org/BernardoSilva/angular-truncate)
+[![Build Status](https://travis-ci.org/BernardoSilva/angular-truncate.svg?branch=master)](https://travis-ci.org/BernardoSilva/angular-truncate) [![Coverage Status](https://coveralls.io/repos/BernardoSilva/angular-truncate/badge.svg)](https://coveralls.io/r/BernardoSilva/angular-truncate)
 
 Angular Truncate
 ----------------
