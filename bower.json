@@ -1,9 +1,10 @@
 {
   "name": "angular-truncate-2",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": [
     "./src/truncate.js"
   ],
+  "ignore": [],
   "dependencies": {
     "angular": "^1.2.0"
   }
