@@ -1,8 +1,8 @@
 /**
  * Angular Truncate 2 - Ellipsis for your templates
- * @version v0.3.1 - 2015-10-31
- * @link https://github.com/BernardoSilva/angular-truncate
- * @author Brian Mathews (sparkalow)
+ * @version v0.4.0 - 2015-10-31
+ * @link https://github.com/BernardoSilva/angular-truncate-2
+ * @author Bernardo Silva
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 angular.module('truncate', [])
