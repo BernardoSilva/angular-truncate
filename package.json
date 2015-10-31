@@ -16,12 +16,7 @@
   "engines": {
     "node": ">= 0.8"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://mit-license.org"
-    }
-  ],
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "coveralls": "^2.11.2",
