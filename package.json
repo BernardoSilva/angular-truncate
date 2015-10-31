@@ -1,7 +1,7 @@
 {
   "name": "angular-truncate-2",
   "description": "Angular Truncate 2 - Ellipsis for your templates",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/BernardoSilva/angular-truncate",
   "author": "Brian Mathews (sparkalow)",
   "contributors": [
