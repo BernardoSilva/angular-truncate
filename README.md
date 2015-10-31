@@ -1,7 +1,10 @@
-[![Build Status](https://travis-ci.org/BernardoSilva/angular-truncate.svg?branch=master)](https://travis-ci.org/BernardoSilva/angular-truncate) [![Coverage Status](https://coveralls.io/repos/BernardoSilva/angular-truncate/badge.svg)](https://coveralls.io/r/BernardoSilva/angular-truncate)
-
 Angular Truncate
 ----------------
+
+[![Build Status](https://travis-ci.org/BernardoSilva/angular-truncate.svg?branch=master)](https://travis-ci.org/BernardoSilva/angular-truncate) [![Coverage Status](https://coveralls.io/repos/BernardoSilva/angular-truncate/badge.svg)](https://coveralls.io/r/BernardoSilva/angular-truncate)
+[![Bower](https://img.shields.io/bower/v/angular-truncate-2.svg)](http://bower.io/search/?q=angular-truncate-2)
+[![NPM](https://img.shields.io/npm/v/angular-truncate-2.svg)](https://www.npmjs.com/package/angular-truncate-2)
+
 
 This project is a filter for Angularjs to truncate text strings to a set number of characters or words and
 add ellipses when needed.
