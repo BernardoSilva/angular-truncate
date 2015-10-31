@@ -10,7 +10,7 @@ Angular Truncate
 This project is a filter for Angularjs to truncate text strings to a set number of characters or words and
 add ellipses when needed.
 
-[Demo](http://bernardosilva.github.io/angular-truncate/)
+[Demo](http://bernardosilva.github.io/angular-truncate-2/)
 
 ## Install
 
@@ -24,7 +24,7 @@ You can install this package with `bower`, `npm` and `gem`.
 bower install angular-truncate-2
 ```
 
-The files are then available at `bower_components/angular-truncate-2/src/angular-truncate.js`
+The files are then available at `bower_components/angular-truncate-2/src/angular-truncate-2.js`
 
 ### npm
 
@@ -34,7 +34,7 @@ The files are then available at `bower_components/angular-truncate-2/src/angular
 npm install angular-truncate-2
 ```
 
-The files are then available at `node_modules/angular-truncate-2/src/angular-truncate.js`
+The files are then available at `node_modules/angular-truncate-2/src/angular-truncate-2.js`
 
 
 ### gem
@@ -55,7 +55,7 @@ Include following in application.js:
 ###Include the javascript file.
 
 ``` html
-<script src="truncate.js"></script>
+<script src="angular-truncate-2.min.js"></script>
 ```
 
 ###Inject the `truncate` filter into your app module.
@@ -84,3 +84,5 @@ Filters can also be chained together. It will truncate after 25 words or before 
      {{ text | words:25 | characters: 100}}
  </p>
  ```
+
+This project is based on [angular-truncate](https://github.com/sparkalow/angular-truncate) created by Brian Mathews.
