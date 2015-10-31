@@ -1,0 +1,21 @@
+{
+  "name": "angular-truncate-2",
+  "version": "0.3.0",
+  "main": [
+    "./src/angular-truncate.js"
+  ],
+  "ignore": [],
+  "dependencies": {
+    "angular": "^1.2.0"
+  },
+  "homepage": "https://github.com/BernardoSilva/angular-truncate",
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.0",
+    "commit": "bfaa7ba547182613128368441d775ef9e75e6cfd"
+  },
+  "_source": "git://github.com/BernardoSilva/angular-truncate.git",
+  "_target": "~0.3.0",
+  "_originalSource": "angular-truncate-2"
+}
