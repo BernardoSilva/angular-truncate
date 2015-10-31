@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/fonts/Material-Design-Icons.svg">
+    
     <title>Angular truncate text filter demo</title>
+    
+   
     <script src="js/angular.min.js"></script>
     <script src="js/truncate.js"></script>
     
@@ -20,51 +26,90 @@ myApp.controller('demoController', function ($scope) {
 </head>
 <body ng-controller="demoController">
 <div class="container">
+    <h1>Angular Truncate Demo</h1>
+<div class="panel panel-default">
+    
 
-    <h2>Angular Truncate Demo</h2>
-
-    <div class="hero-unit">
+    <div class="panel-body">
         <h4>Example Text</h4>
-        <textarea ng-model="text" rows="3" placeholder="Enter test text"></textarea>
+        <textarea class="form-control" ng-model="text" rows="3" placeholder="Enter test text"></textarea>
         <br><br>
-        <strong>Truncate by characters</strong>
-        <label>Number of characters (will not break on a word):
-
-            <input ng-model="numChars" type="number"/></label>
-        <label>Break in the middle of words <input type="checkbox" ng-model="breakOnWord"/></label>
-
-        <h4>Output</h4>
-
-        <div class="well text-info">
-            <p>
-                {{ text | characters:numChars : breakOnWord }}
-            </p>
+        
+        <!--Begin truncate by characters-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Truncate by characters</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="pull-left">Number of characters (will not break on a word):</div>
+                        <div class="col-xs-1 pull-left">
+                            <input ng-model="numChars" type="number" class="form-control"/>
+                        </div>    
+                    </div>
+                </div>
+        
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="breakOnWord" />
+                        Break in the middle of words
+                    </label>
+                </div>
+        
+                <h4>Output</h4>
+        
+                <div class="well text-info">
+                    <p>
+                        {{ text | characters:numChars : breakOnWord }}
+                    </p>
+                </div>
+                <h4>Code</h4>
+                <pre>{<span></span>{ text | characters:{{ numChars }}: {{ breakOnWord }}<span></span>}</pre>
+            </div>
         </div>
-        <h4>Code</h4>
-        <pre>{<span></span>{ text | characters:{{ numChars }}: {{ breakOnWord }}<span></span>}</pre>
-    </div>
-    <div class="hero-unit">
-        <strong>Truncate by words</strong>
-        <label>Number of words:
-        <input ng-model="numWords" type="number"/>
-        </label>
-        <h4>Code</h4>
-        <pre>{<span></span>{ text | words:{{ numWords }}:ignoreSpaces }<span></span>}</pre>
+        
+        
+    
+    <!--Begin truncate by words-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Truncate by words</h3>
+        </div>
+        <div class="panel-body">
+            <label>Number of words:
+                <input class="form-control" ng-model="numWords" type="number"/>
+            </label>
+            <h4>Code</h4>
+            <pre>{<span></span>{ text | words:{{ numWords }}:ignoreSpaces }<span></span>}</pre>
 
-        <h4>Output</h4>
+            <h4>Output</h4>
 
-        <div class="well text-info">
-            <p>
-                {{ text | words:numWords }}
-            </p>
+            <div class="well text-info">
+                <p>
+                    {{ text | words:numWords }}
+                </p>
+            </div>
         </div>
     </div>
-
-    <br><br>
-    <hr/>
-    <p>
-        <a href="https://raw.github.com/sparkalow/angular-truncate/master/src/truncate.js" class="btn btn-primary">Download</a><span class="help-inline">truncate.js</span>
-    </p>
+    
+    
+    <div class="well">
+        <a href="https://raw.github.com/sparkalow/angular-truncate/master/src/truncate.js" class="btn btn-primary">Download</a><span class="help-inline"></span>
+    </div>
+    
 </div>
+        
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+<script>
+    $(function() {
+        $.material.init();
+    });
+</script>
 </body>
 </html>
