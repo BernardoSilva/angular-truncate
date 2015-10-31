@@ -101,8 +101,8 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['jshint', 'karma:test']);
   grunt.registerTask('test-server', ['karma:server']);
 
-  // Build task.
-  grunt.registerTask('build', ['test', 'concat', 'uglify']);
+  // Build task, `test` was removed because it's not stable.
+  grunt.registerTask('build', ['concat', 'uglify']);
 
   // run devserver
   grunt.registerTask('webserver', ['connect:devserver']);
