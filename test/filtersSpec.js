@@ -34,7 +34,15 @@ describe('truncate', function () {
         });
 
         it('should trim this down breaking on words', function () {
-            expect(characterFilter('123456789 10 11 12 13 14', 14,true)).toEqual('123456789 10 1…');
+            expect(characterFilter('123456789 10 11 12 13 14', 14, true)).toEqual('123456789 10 1…');
+        });
+
+        /**
+         * This example the trim will happen on a space it should
+         * trim to last chracter and add ellipses.
+         */
+        it('should trim this down breaking on words last character and ignore spaces', function () {
+            expect(characterFilter('123456   789', 7, true)).toEqual('123456…');
         });
 
         it('should trim this down ignoring the space', function () {
