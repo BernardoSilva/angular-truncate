@@ -2,7 +2,8 @@ Angular Truncate
 ----------------
 
 [![License](https://img.shields.io/npm/l/angular-truncate-2.svg)](http://bower.io/search/?q=angular-truncate-2)
-[![Build Status](https://travis-ci.org/BernardoSilva/angular-truncate.svg?branch=master)](https://travis-ci.org/BernardoSilva/angular-truncate) [![Coverage Status](https://coveralls.io/repos/BernardoSilva/angular-truncate/badge.svg)](https://coveralls.io/r/BernardoSilva/angular-truncate)
+[![Build Status](https://travis-ci.org/BernardoSilva/angular-truncate-2.svg?branch=master)](https://travis-ci.org/BernardoSilva/angular-truncate-2)
+[![Coverage Status](https://coveralls.io/repos/BernardoSilva/angular-truncate-2/badge.svg)](https://coveralls.io/r/BernardoSilva/angular-truncate-2)
 [![Bower](https://img.shields.io/bower/v/angular-truncate-2.svg)](http://bower.io/search/?q=angular-truncate-2)
 [![NPM](https://img.shields.io/npm/v/angular-truncate-2.svg)](https://www.npmjs.com/package/angular-truncate-2)
 
