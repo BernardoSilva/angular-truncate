@@ -15,8 +15,8 @@ var configuration = {
 
     // list of files / patterns to load in the browser
     files: [
-        'test/lib/angular/angular.min.js',
-        'test/lib/angular/angular-mocks.js',
+        'bower_components/angular/angular.js',
+        'bower_components/angular-mocks/angular-mocks.js',
         'src/*.js',
         'test/*.js'
     ],
