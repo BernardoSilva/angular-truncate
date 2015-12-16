@@ -18,7 +18,7 @@ describe('truncate', function () {
         });
 
         it('should fail', function () {
-            expect(characterFilter(null, 30)).toNotEqual('1234567890');
+            expect(characterFilter(null, 30)).not.toEqual('1234567890');
         });
 
         it('should not trim these down', function () {
@@ -74,7 +74,7 @@ describe('truncate', function () {
         });
 
         it('should fail', function () {
-            expect(wordFilter(null, 30)).toNotEqual('1234567890');
+            expect(wordFilter(null, 30)).not.toEqual('1234567890');
         });
 
         it('should not trim these down', function () {
@@ -127,7 +127,7 @@ describe('truncate', function () {
         });
 
         it('should fail', function () {
-            expect(characterFilter(null, 30)).toNotEqual('1234567890');
+            expect(characterFilter(null, 30)).not.toEqual('1234567890');
         });
 
         it('should not trim these down', function () {
