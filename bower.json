@@ -5,7 +5,8 @@
     "./src/angular-truncate-2.js"
   ],
   "ignore": [],
-  "dependencies": {
-    "angular": "^1.2.0"
+  "devDependencies": {
+    "angular": "^1.2.0",
+    "angular-mocks": "^1.2.0"
   }
 }
