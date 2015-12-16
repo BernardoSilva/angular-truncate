@@ -86,4 +86,18 @@ Filters can also be chained together. It will truncate after 25 words or before 
  </p>
  ```
 
+## How contribute
+
+* Fork the repository
+* Do your changes/suggestions
+* Create a Pull Request
+
+
+### How to run tests
+
+```sh
+npm test
+```
+
+
 This project is based on [angular-truncate](https://github.com/sparkalow/angular-truncate) created by Brian Mathews.
