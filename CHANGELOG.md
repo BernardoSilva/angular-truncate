@@ -1,8 +1,18 @@
 # Angular-truncate changelog
 
-### Future release
+### 0.4.2
 
-- remove hard test dependencies, move it to bower 
+- Remove dependencies from version control to bower in [695a7bf](https://github.com/BernardoSilva/angular-truncate-2/commit/695a7bf70a2583ff119a981f9fc8e44dd44f213a) by [osavchenko](https://github.com/osavchenko).
+
+### 0.4.1
+
+- Bump code coverage to 100%.
+- Fix build badge path.
+- Fix code coverage badge path.
+
+### 0.4.0
+
+- Renamed all files to match project name.
 
 ### 0.3.0 (2015-10-31)
 
