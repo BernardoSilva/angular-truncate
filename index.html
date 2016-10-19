@@ -3,9 +3,9 @@
 <head>
     <title>Angular truncate 2 text filter demo</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
+    <meta name="description" content="Angular Truncate 2 Demo website">
     <meta name="keywords" content="Angular,truncate,ellipses,JavaScript,BernardoSilva">
-    
+
     <!--Include external stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css">
@@ -13,13 +13,13 @@
 </head>
 <body ng-controller="demoController">
     <div class="container">
-        <h1>Angular Truncate Demo</h1>
+        <h1>Angular Truncate 2 Demo</h1>
         <div class="panel panel-default">
             <div class="panel-body">
                 <h4>Example Text</h4>
                 <textarea class="form-control" ng-model="text" rows="3" placeholder="Enter test text"></textarea>
                 <br><br>
-        
+
                 <!--Begin truncate by characters-->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
@@ -62,9 +62,9 @@
                         </label>
                         <h4>Code</h4>
                         <pre>{<span></span>{ text | words:{{ numWords }}:ignoreSpaces }<span></span>}</pre>
-            
+
                         <h4>Output</h4>
-            
+
                         <div class="well text-info">
                             <p>
                                 {{ text | words:numWords }}
@@ -72,21 +72,21 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="well">
                     <a href="https://raw.github.com/bernardosilva/angular-truncate/master/src/angular-truncate.js" class="btn btn-primary">Download</a><span class="help-inline"></span>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!--Include javascript files-->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-truncate-2/dist/angular-truncate-2.min.js"></script>
 	<script>
         // Declare app level module which depends on filters, and services.
         var myApp = angular.module('myApp', ['truncate']);
-        
+
         // Main app controller.
         myApp.controller('demoController', function ($scope) {
             $scope.text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.';
