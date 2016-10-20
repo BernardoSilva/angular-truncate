@@ -23,7 +23,7 @@
                 <!--Begin truncate by characters-->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Truncate by characters</h3>
+                        <h3 class="panel-title">Truncate using characters filter</h3>
                     </div>
                     <div class="panel-body">
                         <div class="row">
@@ -50,11 +50,11 @@
                         <pre>{<span></span>{ text | characters:{{ numChars }}: {{ breakOnWord }}<span></span>}</pre>
                     </div>
                 </div>
-                
+
                 <!--Begin truncate by words-->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Truncate by words</h3>
+                        <h3 class="panel-title">Truncate using words filter</h3>
                     </div>
                     <div class="panel-body">
                         <label>Number of words:
@@ -68,6 +68,28 @@
                         <div class="well text-info">
                             <p>
                                 {{ text | words:numWords }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Begin truncate using splitcharacters-->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Truncate using splitcharacters filter</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Number of words:
+                            <input class="form-control" ng-model="numWords" type="number"/>
+                        </label>
+                        <h4>Code</h4>
+                        <pre>{<span></span>{ text | splitcharacters:{{ numWords }} }<span></span>}</pre>
+
+                        <h4>Output</h4>
+
+                        <div class="well text-info">
+                            <p>
+                                {{ text | splitcharacters:numWords }}
                             </p>
                         </div>
                     </div>
